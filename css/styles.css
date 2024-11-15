@@ -1,0 +1,353 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Fondo suave */
+  color: #333;
+}
+
+/* Barra superior y navegación */
+.top-bar {
+  background-color: #444;
+  color: #f9f7f1;
+  padding: 15px 20px;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
+
+.user-actions a {
+  color: #fefefe;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #888;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  color: #fefefe;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Banner deslizador */
+.banner-slider {
+  position: relative;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fefefe;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+
+.new-arrivals-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: #555;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Sección de cuadrícula de imágenes */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: #f9f7f1;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+  color: #f3d19c;
+}
+
+.footer-content p {
+  font-size: 1em;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* Collage de imágenes */
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.project p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+/* Cita inspiradora */
+.inspirational-quote {
+  background-color: #555;
+  padding: 15px;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #fefefe;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+  background-color: #222;
+  color: #aaa;
+}
+
+
+  /* Sección de Servicios */
+  .services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .service-item {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .service-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h3 {
+    font-size: 1.8em;
+    color: #4a4a4a;
+    margin-top: 15px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .service-item p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #70544f;
+    color: #fff;
+    font-size: 0.9em;
+  }
+  
+  
+  
+  /* styles.css - Página de Servicios */
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f3f3f3;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    margin: 20px 0 10px;
+  }
+  
+  .service-card p {
+    color: #666;
+    padding: 0 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  /* styles.css - Portafolio */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
